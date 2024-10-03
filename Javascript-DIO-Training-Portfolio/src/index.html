@@ -39,32 +39,48 @@
                     src="/src/assets/img/avataaars.png"
                     alt="Avatar"
                     class="photo"
+                    id="profile.photo"
                 />
                 <h1 class="title">
                     Olá, <br />
-                    eu sou Wellington M. de Oliveira
+                    eu sou
+                    <span id="profile.name">Wellington M. de Oliveira</span>
                 </h1>
 
                 <div class="information">
-                    <p><i class="fas fa-briefcase"></i> Software Engineer</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Penapolis - SP</p>
+                    <p>
+                        <i class="fas fa-briefcase"></i>
+                        <span id="profile.job">Engineer</span>
+                    </p>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span id="profile.city">Penapolis - SP</span>
+                    </p>
                     <p>
                         <i class="fas fa-phone"></i
-                        ><a href="tel:(18) 9 9999-9999">(18) 9 9999-9999</a>
+                        ><a href="tel:(18) 9 9999-9999"
+                            ><span id="profile.phone"
+                                >(18) 9 9999-9999</span
+                            ></a
+                        >
                     </p>
                     <p>
                         <i class="fas fa-envelope"></i
-                        ><a href="mailto:ex@email.com">ex@email.com</a>
+                        ><a href="mailto:ex@email.com"
+                            ><span id="profile.email">ex@email.com</span></a
+                        >
                     </p>
                 </div>
             </header>
             <section class="about">
                 <h2>Sobre Mim</h2>
                 <p>
-                    Sou um desenvolvedor de software apaixonado por criar
-                    soluções inovadoras e eficientes. Tenho experiência em
-                    diversas tecnologias e estou sempre em busca de novos
-                    desafios.
+                    <span id="profile.aboutme">
+                        Sou um desenvolvedor de software apaixonado por criar
+                        soluções inovadoras e eficientes. Tenho experiência em
+                        diversas tecnologias e estou sempre em busca de novos
+                        desafios.</span
+                    >
                 </p>
             </section>
             <section class="acordeon">
@@ -72,7 +88,7 @@
                     Idiomas <i class="fas fa-chevron-down"></i>
                 </button>
                 <div class="content">
-                    <ul class="lenguages">
+                    <ul class="lenguages" id="profile.lenguages">
                         <li><i class="fas fa-check"></i>Português (BR)</li>
                         <li><i class="fas fa-check"></i>Inglês</li>
                     </ul>
@@ -83,7 +99,7 @@
                     Projetos <i class="fas fa-chevron-down"></i>
                 </button>
                 <div class="content">
-                    <ul class="portifolio">
+                    <ul class="portifolio" id="profile.portifolio">
                         <li>
                             <span class="title"
                                 ><i class="fa-brands fa-github"></i> Criando um
@@ -119,7 +135,7 @@
                     Experiência Profissional <i class="fas fa-chevron-down"></i>
                 </button>
                 <div class="content">
-                    <ul class="experience">
+                    <ul class="experience" id="profile.experience">
                         <li>
                             <span class="title"
                                 ><i class="fas fa-briefcase"></i> Desenvolvedor
@@ -186,7 +202,7 @@
                 </button>
                 <div class="content">
                     <div class="skills">
-                        <section class="skills">
+                        <section class="skills" id="profile.skills">
                             <span class="title">Ferramentas:</span>
                             <ul class="tools-list">
                                 <li>
@@ -214,5 +230,7 @@
             </section>
         </main>
         <script src="assets/js/acordeon.js"></script>
+        <script src="assets/js/api.js"></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
