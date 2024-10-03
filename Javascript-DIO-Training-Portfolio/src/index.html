@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="assets/css/portifolio.css" />
         <link rel="stylesheet" href="assets/css/experience.css" />
         <link rel="stylesheet" href="assets/css/skills.css" />
+        <link rel="stylesheet" href="assets/css/loader.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -33,7 +34,10 @@
         />
     </head>
     <body>
-        <main class="main">
+        
+        <div class="loader" hidden="true"></div>     
+        <main class="main">                 
+
             <header class="header">
                 <img
                     src="/src/assets/img/avataaars.png"
@@ -202,7 +206,7 @@
                 </button>
                 <div class="content">
                     <div class="skills">
-                        <section class="skills" id="profile.skills">
+                        <section class="skills" id="profile.hard-skills">
                             <span class="title">Ferramentas:</span>
                             <ul class="tools-list">
                                 <li>
@@ -216,8 +220,8 @@
                                     <i class="fa-brands fa-css3-alt"></i>CSS3
                                 </li>
                             </ul>
-                            <span class="title">Habilidades:</span>
-                            <ul>
+                            <span class="title" >Habilidades:</span>
+                            <ul id="profile.soft-skills">
                                 <li>Liderança</li>
                                 <li>Facilidade de comunicação</li>
                                 <li>Organização</li>

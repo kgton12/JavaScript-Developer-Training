@@ -57,8 +57,14 @@ class Profile {
 }
 
 (async () => {
-    const profileData = await fetchProfileData();
+    
+    const main = document.getElementsByClassName("main")[0];    
+    const loader = document.getElementsByClassName("loader")[0];
+    
+     main.hidden = true;
+     loader.hidden = false;
 
+    const profileData = await fetchProfileData();
 
     const profile = new Profile(
         profileData.name,
@@ -69,27 +75,15 @@ class Profile {
         profileData.email,
         profileData.aboutme,
         new Skills(
-            profileData.skills.hardSkills.map(
-                (skill) => new HardSkill(skill.name, skill.logo)
-            ),
+            profileData.skills.hardSkills.map((skill) => new HardSkill(skill.name, skill.logo)),
             profileData.skills.softSkills
         ),
         profileData.languages,
-        profileData.portfolio.map(
-            (portfolio) =>
-                new Portfolio(portfolio.name, portfolio.url, portfolio.github)
-        ),
-        profileData.professionalExperience.map(
-            (experience) =>
-                new ProfessionalExperience(
-                    experience.name,
-                    experience.period,
-                    experience.description
-                )
-        )
+        profileData.portfolio.map((portfolio) => new Portfolio(portfolio.name, portfolio.url, portfolio.github)),
+        profileData.professionalExperience.map((experience) => new ProfessionalExperience(experience.name, experience.period, experience.description))
     );
 
-    console.log(profile.aboutme);
+    console.log(profile);
 
     document.getElementById("profile.name").innerText = profile.name;
     document.getElementById("profile.job").innerText = profile.job;
@@ -97,15 +91,51 @@ class Profile {
     document.getElementById("profile.phone").innerText = profile.phone;
     document.getElementById("profile.email").innerText = profile.email;
     document.getElementById("profile.photo").src = profile.photo;
-    document.getElementById("profile.aboutme").src = profile.aboutme;
- 
+    document.getElementById("profile.aboutme").innerText = profile.aboutme;
 
+    const lenguages = document.getElementById("profile.lenguages");
 
+    profile.languages.forEach((language) => {
+        const li = document.createElement("li");
+        li.innerHTML = `<i class="fas fa-check"></i>${language}`;
+        lenguages.appendChild(li);
+    });
 
+    const portifolio = document.getElementById("profile.portifolio");
 
+    profile.portfolio.forEach((portfolio) => {
+        const li = document.createElement("li");
 
+        const portfolioHTML = `<span class="title"
+                                ><i class="fa-brands fa-github"></i> ${portfolio.url}</span>
+                                <a href="${portfolio.url}" target="_blank">${portfolio.name}</a>`;
+        li.innerHTML = portfolioHTML;
+        portifolio.appendChild(li);
+    });
 
+    const professionalExperience = document.getElementById("profile.experience");
 
+    profile.professionalExperience.forEach((experience) => {
+        const li = document.createElement("li");
 
-    
+        const experienceHTML = `<span class="title">${experience.name}</span>
+                                <span class="period">${experience.period}</span>
+                                <p>${experience.description}</p>`;
+        li.innerHTML = experienceHTML;
+        professionalExperience.appendChild(li);
+    });
+
+    const softSkills = document.getElementById("profile.soft-skills");
+
+    profile.skills.softSkills.forEach((softSkill) => {
+        const li = document.createElement("li");
+        li.innerHTML = softSkill;
+        softSkills.appendChild(li);
+    });
+
+    setTimeout(() => {
+        main.hidden = false;
+        loader.hidden = true;
+    }, 2000);
+
 })();
