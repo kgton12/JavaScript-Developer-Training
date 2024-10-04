@@ -9,16 +9,44 @@
     "skills": {
         "hardSkills": [
             {
-                "name": "Nodejs",
-                "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/nodejs.png"
+                "name": "cSharp",
+                "logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/csharp.png"
+            },
+            {
+                "name": "dotNet",
+                "logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/dotnet.png"
+            },
+            {
+                "name": "js",
+                "logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/js.png"
+            },
+            {
+                "name": "ts",
+                "logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/ts.png"
+            },
+            {
+                "name": "nodeJs",
+                "logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/nodejs.png"
             },
             {
                 "name": "React",
-                "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/react.png"
+                "logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/react.png"
             },
             {
-                "name": "Postgresql",
-                "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png"
+                "name": "HTML",
+                "logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/html.png"
+            },
+            {
+                "name": "CSS",
+                "logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/css.png"
+            },
+            {
+                "name": "git",
+                "logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/git.png"
+            },
+            {
+                "name": "postgressql",
+                "logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/postgresql.png"
             }
         ],
         "softSkills": [

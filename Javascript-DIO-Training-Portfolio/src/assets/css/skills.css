@@ -35,20 +35,20 @@
     margin-bottom: 0.5rem;
     color: #333;
 }
-
-
-.skills li span i,
-.skills li i {
-    margin-right: 0.5rem;
-}
-
-.skills li i {
-    font-size: 3.5rem;
-}
-
-
 .tools-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 }
+
+.tools-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tools-list li img {
+    width: 4rem; /* Ajuste o tamanho conforme necessário */
+    height: 4.3rem; /* Ajuste o tamanho conforme necessário */
+}
+

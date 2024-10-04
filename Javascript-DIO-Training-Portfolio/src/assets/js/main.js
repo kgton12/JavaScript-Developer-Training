@@ -57,13 +57,6 @@ class Profile {
 }
 
 (async () => {
-    
-    const main = document.getElementsByClassName("main")[0];    
-    const loader = document.getElementsByClassName("loader")[0];
-    
-     main.hidden = true;
-     loader.hidden = false;
-
     const profileData = await fetchProfileData();
 
     const profile = new Profile(
@@ -133,9 +126,10 @@ class Profile {
         softSkills.appendChild(li);
     });
 
-    setTimeout(() => {
-        main.hidden = false;
-        loader.hidden = true;
-    }, 2000);
-
+    profile.skills.hardSkills.forEach((hardSkill) => {
+        const li = document.createElement("li");
+        const hardSkillsHTML = `<img src="${hardSkill.logo}" alt="${hardSkill.name}`;
+        li.innerHTML = hardSkillsHTML;
+        hardSkill.appendChild(li);
+    });
 })();
