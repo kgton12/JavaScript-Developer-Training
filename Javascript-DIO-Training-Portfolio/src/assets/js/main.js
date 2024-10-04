@@ -56,9 +56,7 @@ class Profile {
     }
 }
 
-(async () => {
-    const profileData = await fetchProfileData();
-
+function BuildProfile(profileData) {
     const profile = new Profile(
         profileData.name,
         profileData.photo,
@@ -76,8 +74,23 @@ class Profile {
         profileData.professionalExperience.map((experience) => new ProfessionalExperience(experience.name, experience.period, experience.description))
     );
 
-    console.log(profile);
+    return profile;
+}
 
+function DisplayLoader() {
+    document.getElementById("loader").classList.remove("hidden");
+}
+
+function HideLoadingScreen() {
+    document.getElementById("loader").classList.add("hidden");
+}
+
+function ConstructLanguages(profile) {
+    const languagesHTML = profile.languages.map((language) => `<li><i class="fas fa-check"></i>${language}</li>`).join("");
+    document.getElementById("profile.lenguages").innerHTML = languagesHTML;
+}
+
+function ConstructInfo(profile) {
     document.getElementById("profile.name").innerText = profile.name;
     document.getElementById("profile.job").innerText = profile.job;
     document.getElementById("profile.city").innerText = profile.location;
@@ -85,51 +98,52 @@ class Profile {
     document.getElementById("profile.email").innerText = profile.email;
     document.getElementById("profile.photo").src = profile.photo;
     document.getElementById("profile.aboutme").innerText = profile.aboutme;
+}
 
-    const lenguages = document.getElementById("profile.lenguages");
+function ConstructPortifolio(profile) {
+    const portfolioHTML = profile.portfolio
+        .map(
+            (portfolio) => `<li><span class="title"><i class="fa-brands fa-github"></i>${portfolio.name}</span>
+                    <a href="${portfolio.url}" target="_blank">${portfolio.name}</a></li>`
+        )
+        .join("");
+    document.getElementById("profile.portifolio").innerHTML = portfolioHTML;
+}
 
-    profile.languages.forEach((language) => {
-        const li = document.createElement("li");
-        li.innerHTML = `<i class="fas fa-check"></i>${language}`;
-        lenguages.appendChild(li);
-    });
+function ConstructProfessionalExperience(profile) {
+    const experienceHTML = profile.professionalExperience
+        .map(
+            (experience) => `<li><span class="title">${experience.name}</span>
+                     <span class="period">${experience.period}</span>
+                     <p>${experience.description}</p></li>`
+        )
+        .join("");
+    document.getElementById("profile.experience").innerHTML = experienceHTML;
+}
 
-    const portifolio = document.getElementById("profile.portifolio");
+function ConstructSoftSkills(profile) {
+    const softSkillsHTML = profile.skills.softSkills.map((softSkill) => `<li>${softSkill}</li>`).join("");
+    document.getElementById("profile.soft-skills").innerHTML = softSkillsHTML;
+}
 
-    profile.portfolio.forEach((portfolio) => {
-        const li = document.createElement("li");
+function ConstructHardSkills(profile) {
+    const hardSkillsHTML = profile.skills.hardSkills.map((hardSkill) => `<li><img src="${hardSkill.logo}" alt="${hardSkill.name}"></li>`).join("");
+    document.getElementById("tools-list").innerHTML = hardSkillsHTML;
+}
 
-        const portfolioHTML = `<span class="title"
-                                ><i class="fa-brands fa-github"></i> ${portfolio.url}</span>
-                                <a href="${portfolio.url}" target="_blank">${portfolio.name}</a>`;
-        li.innerHTML = portfolioHTML;
-        portifolio.appendChild(li);
-    });
+(async () => {
+    DisplayLoader();
 
-    const professionalExperience = document.getElementById("profile.experience");
+    const profileData = await FetchProfileData();
 
-    profile.professionalExperience.forEach((experience) => {
-        const li = document.createElement("li");
+    const profile = BuildProfile(profileData);
 
-        const experienceHTML = `<span class="title">${experience.name}</span>
-                                <span class="period">${experience.period}</span>
-                                <p>${experience.description}</p>`;
-        li.innerHTML = experienceHTML;
-        professionalExperience.appendChild(li);
-    });
+    ConstructInfo(profile);
+    ConstructLanguages(profile);
+    ConstructPortifolio(profile);
+    ConstructProfessionalExperience(profile);
+    ConstructSoftSkills(profile);
+    ConstructHardSkills(profile);
 
-    const softSkills = document.getElementById("profile.soft-skills");
-
-    profile.skills.softSkills.forEach((softSkill) => {
-        const li = document.createElement("li");
-        li.innerHTML = softSkill;
-        softSkills.appendChild(li);
-    });
-
-    profile.skills.hardSkills.forEach((hardSkill) => {
-        const li = document.createElement("li");
-        const hardSkillsHTML = `<img src="${hardSkill.logo}" alt="${hardSkill.name}`;
-        li.innerHTML = hardSkillsHTML;
-        hardSkill.appendChild(li);
-    });
+    HideLoadingScreen();
 })();

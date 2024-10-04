@@ -1,4 +1,4 @@
-async function fetchProfileData() {
+async function FetchProfileData() {
     const response = await fetch(
         "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/data/profile.json"
     );
