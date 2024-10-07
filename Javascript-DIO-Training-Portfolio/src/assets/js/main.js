@@ -94,7 +94,7 @@ function ConstructInfo(profile) {
     document.getElementById("profile.name").innerText = profile.name;
     document.getElementById("profile.job").innerText = profile.job;
     document.getElementById("profile.city").innerText = profile.location;
-    document.getElementById("profile.phone").innerText = profile.phone;
+    document.getElementById("profile.linkdin").src = profile.linkdin;
     document.getElementById("profile.email").innerText = profile.email;
     document.getElementById("profile.photo").src = profile.photo;
     document.getElementById("profile.aboutme").innerText = profile.aboutme;
