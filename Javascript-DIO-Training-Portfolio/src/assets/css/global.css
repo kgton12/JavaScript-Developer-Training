@@ -1,36 +1,36 @@
 * {
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-    color: #333;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+	color: #333;
 }
 body {
-    background-color: #f0f0f0;
-    color: #333;
-    background: linear-gradient(
-        135deg,
-        #0d47a1 0%,
-        #1976d2 20%,
-        #2196f3 40%,
-        #42a5f5 60%,
-        #64b5f6 80%,
-        #bbdefb 100%
-    );
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
+	background-color: #f0f0f0;
+	color: #333;
+	background: linear-gradient(
+		135deg,
+		#0d47a1 0%,
+		#1976d2 20%,
+		#2196f3 40%,
+		#42a5f5 60%,
+		#64b5f6 80%,
+		#bbdefb 100%
+	);
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
 }
 .main {
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 1rem;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin: 1rem;
+	padding: 1rem;
+	border: 1px solid #ddd;
+	border-radius: 1rem;
+	background-color: #fff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 @media only screen and (min-width: 768px) {
-    .main {
-        max-width: 1024px;
-        margin: 2rem auto;
-    }
+	.main {
+		max-width: 1024px;
+		margin: 2rem auto;
+	}
 }

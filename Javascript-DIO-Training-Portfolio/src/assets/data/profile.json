@@ -1,97 +1,95 @@
 {
-    "name": "Wellington M de Oliveira",
-    "photo": "https://avatars.githubusercontent.com/u/56723945?v=4",
-    "job": "Software Engineer na Paschoalotto",
-    "location": "Penapolis - SP",
-    "linkdin": "https://www.linkedin.com/in/wellington-malheiro-9173981bb/",
-    "email": "wellington.malheiro@gmail.com",
-    "aboutme": "Sou um desenvolvedor de software apaixonado por criar soluções inovadoras e eficientes. Tenho experiência em diversas tecnologias e estou sempre em busca de novos desafios.",
-    "skills": {
-        "hardSkills": [
-            {
-                "name": "cSharp",                         
-                "logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/csharp.png"
-            },
-            {
-                "name": "dotNet",
-                "logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/dotnet.png"
-            },
-            {
-                "name": "js",
-                "logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/js.png"
-            },
-            {
-                "name": "ts",
-                "logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/ts.png"
-            },
-            {
-                "name": "nodeJs",
-                "logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/nodejs.png"
-            },
-            {
-                "name": "React",
-                "logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/react.png"
-            },
-            {
-                "name": "HTML",
-                "logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/html.png"
-            },
-            {
-                "name": "CSS",
-                "logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/css.png"
-            },
-            {
-                "name": "git",
-                "logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/git.png"
-            },
-            {
-                "name": "postgressql",
-                "logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/postgresql.png"
-            }
-        ],
-        "softSkills": [
-            "Empatia",
-            "Liderança",
-            "Trabalho em equipe",
-            "Flexibilidade",
-            "Organização"
-        ]
-    },
-    "languages": [
-        "Português BR",
-        "Inglês (tecnico)"
-    ],
-    "portfolio": [
-        {
-            "name": "Web Scraping de varios Sites",
-            "url": "https://github.com/kgton12/WebScrapingSeveralSites",
-            "github": true
-        },
-        {
-            "name": "Rescrita do TCC em C#",
-            "url": "https://github.com/kgton12/TccRewritenCsharp",
-            "github": true
-        },{
-            "name": "Exercícios do treinamento de desenvolvedor fullstack utilizando TypeScript.",
-            "url": "https://github.com/kgton12/TypeScript-Fullstack-Developer-Training",
-            "github": true
-        },
-        {
-            "name": "Exercícios do treinamento de desenvolvedor fullstack utilizando JavaScript.",
-            "url": "https://github.com/kgton12/JavaScript-Developer-Training",
-            "github": true
-        }
-    ],
-    "professionalExperience": [
-        {
-            "name": "Software Engineering na Paschoalotto",
-            "period": "2021 - até o momento",
-            "description": "É um prazer trabalhar ao lado de tantos profissionais excepcionais e construir tantas inovações de mercado."
-        },
-        {
-            "name": "Software Engineering Eficaz Sistemas",
-            "period": "2018 - 2021",
-            "description": "Foi um grande prazer fazer parte deste time fantástico e poder contribuir com a transformação de tantas empresas."
-        }
-    ]
+	"name": "Wellington M de Oliveira",
+	"photo": "https://avatars.githubusercontent.com/u/56723945?v=4",
+	"job": "Software Engineer na Paschoalotto",
+	"location": "Penapolis - SP",
+	"linkdin": "https://www.linkedin.com/in/wellington-malheiro-9173981bb/",
+	"email": "wellington.malheiro@gmail.com",
+	"aboutme": "Sou um desenvolvedor de software apaixonado por criar soluções inovadoras e eficientes. Tenho experiência em diversas tecnologias e estou sempre em busca de novos desafios.",
+	"skills": {
+		"hardSkills": [
+			{
+				"name": "cSharp",
+				"logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/csharp.png"
+			},
+			{
+				"name": "dotNet",
+				"logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/dotnet.png"
+			},
+			{
+				"name": "js",
+				"logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/js.png"
+			},
+			{
+				"name": "ts",
+				"logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/ts.png"
+			},
+			{
+				"name": "nodeJs",
+				"logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/nodejs.png"
+			},
+			{
+				"name": "React",
+				"logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/react.png"
+			},
+			{
+				"name": "HTML",
+				"logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/html.png"
+			},
+			{
+				"name": "CSS",
+				"logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/css.png"
+			},
+			{
+				"name": "git",
+				"logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/git.png"
+			},
+			{
+				"name": "postgressql",
+				"logo": "https://raw.githubusercontent.com/kgton12/JavaScript-Developer-Training/refs/heads/master/Javascript-DIO-Training-Portfolio/src/assets/img/postgresql.png"
+			}
+		],
+		"softSkills": [
+			"Empatia",
+			"Liderança",
+			"Trabalho em equipe",
+			"Flexibilidade",
+			"Organização"
+		]
+	},
+	"languages": ["Português BR", "Inglês (tecnico)"],
+	"portfolio": [
+		{
+			"name": "Web Scraping de varios Sites",
+			"url": "https://github.com/kgton12/WebScrapingSeveralSites",
+			"github": true
+		},
+		{
+			"name": "Rescrita do TCC em C#",
+			"url": "https://github.com/kgton12/TccRewritenCsharp",
+			"github": true
+		},
+		{
+			"name": "Exercícios do treinamento de desenvolvedor fullstack utilizando TypeScript.",
+			"url": "https://github.com/kgton12/TypeScript-Fullstack-Developer-Training",
+			"github": true
+		},
+		{
+			"name": "Exercícios do treinamento de desenvolvedor fullstack utilizando JavaScript.",
+			"url": "https://github.com/kgton12/JavaScript-Developer-Training",
+			"github": true
+		}
+	],
+	"professionalExperience": [
+		{
+			"name": "Software Engineering na Paschoalotto",
+			"period": "2021 - até o momento",
+			"description": "É um prazer trabalhar ao lado de tantos profissionais excepcionais e construir tantas inovações de mercado."
+		},
+		{
+			"name": "Software Engineering Eficaz Sistemas",
+			"period": "2018 - 2021",
+			"description": "Foi um grande prazer fazer parte deste time fantástico e poder contribuir com a transformação de tantas empresas."
+		}
+	]
 }
