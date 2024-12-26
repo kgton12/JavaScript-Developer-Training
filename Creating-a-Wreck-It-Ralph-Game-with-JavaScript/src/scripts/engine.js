@@ -4,7 +4,7 @@ const state = {
 		enemy: document.querySelector(".enemy"),
 		timeLeft: document.querySelector("#time-left"),
 		score: document.querySelector("#score"),
-        container: document.querySelector(".container"),
+		container: document.querySelector(".container"),
 	},
 	values: {
 		gameSpeed: 1000,
@@ -24,23 +24,20 @@ function countDown() {
 	state.view.timeLeft.textContent = state.values.currentTime;
 
 	if (state.values.currentTime <= 0) {
-        clearInterval(state.actions.timerId);
-        clearInterval(state.actions.countDownTimerId);
+		clearInterval(state.actions.timerId);
+		clearInterval(state.actions.countDownTimerId);
 
-
-        playSound("game-over");
-        state.view.container.innerHTML = `<h1 class="game-over">Game Over! Your final score is ${state.values.result}</h1>`;
+		playSound("game-over");
+		state.view.container.innerHTML = `<h1 class="game-over">Game Over! Your final score is ${state.values.result}</h1>`;
 		// alert("Game Over! Your final score is " + state.values.result);
 	}
 }
 
 function playSound(audioName) {
-    const audio = new Audio(`./src/sounds/${audioName}.m4a`);
-    audio.volume = 0.2;
-    audio.play();
-
+	const audio = new Audio(`./src/sounds/${audioName}.m4a`);
+	audio.volume = 0.2;
+	audio.play();
 }
-
 
 function randomSquare() {
 	state.view.squares.forEach((square) => {
@@ -60,7 +57,7 @@ function addListenerHitBox() {
 			if (square.id === state.values.hitPosition) {
 				state.values.result++;
 				state.view.score.textContent = state.values.result;
-                playSound("hit");
+				playSound("hit");
 
 				state.values.hitPosition = null;
 			}
@@ -69,13 +66,13 @@ function addListenerHitBox() {
 }
 
 function initActions() {
-    state.actions.timerId = setInterval(randomSquare, 600);
-    state.actions.countDownTimerId = setInterval(countDown, 1000);
+	state.actions.timerId = setInterval(randomSquare, 600);
+	state.actions.countDownTimerId = setInterval(countDown, 1000);
 }
 
 function initialize() {
 	addListenerHitBox();
-    initActions();
+	initActions();
 }
 //
 // initialize();
